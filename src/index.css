@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffe062;
+}
+
+@layer components {
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .font-border {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000, /* Diagonal shadows */ -1px 0 0 #000, 1px 0 0 #000,
+      0 -1px 0 #000, 0 1px 0 #000; /* Horizontal and vertical shadows */
+  }
+
+  .font-border {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .primary-text-color {
+    color: #1e2027e8;
+  }
+
+  .secondary-text-color {
+    color: #1e2027c5;
+  }
+
+  .bg-color-primary {
+    background-color: #ffe062;
+  }
+
+  .bg-color-green {
+    background-color: #09ce83;
+  }
+
+  .bg-color-light-green {
+    background-color: #00c5ad;
+  }
+
+  .bg-color-blue {
+    background-color: #0f6de8;
+  }
+
+  .bg-color-purple {
+    background-color: #a258ff;
+  }
+  .bg-color-orange {
+    background-color: #eb7610;
+  }
+
+  .color-primary {
+    color: #ffe062;
+  }
+  .color-green {
+    color: #09ce83;
+  }
+  .color-light-green {
+    color: #00c5ad;
+  }
+  .color-blue {
+    color: #0f6de8;
+  }
+  .color-purple {
+    color: #a258ff;
+  }
+  .color-orange {
+    color: #eb7610;
+  }
+}
