@@ -1,22 +1,27 @@
 export const navElements = [
   {
-    name: "Home 🏠",
+    name: "Home",
+    icon: "🏠",
     link: "#home",
   },
   {
-    name: "About ❔",
+    name: "About",
+    icon: "❔",
     link: "#about",
   },
   {
-    name: "Services 🧑🏻‍💻",
+    name: "Services",
+    icon: "🧑🏻‍💻",
     link: "#services",
   },
   {
-    name: "Projects 💼",
+    name: "Projects",
+    icon: "💼",
     link: "#projects",
   },
   {
-    name: "Contacts 📞",
+    name: "Contacts",
+    icon: "📞",
     link: "#contacts",
   },
 ];
@@ -45,7 +50,7 @@ export const projects = [
   {
     title: "Learn Up 🧑🏻‍🏫",
     description:
-      "Diploma certification work. Fully-functional e-learining app, replica of platforms such as Coursera and Udemy",
+      "Diploma certification work. Fully-functional e-learning app, replica of platforms such as Coursera and Udemy",
     image: "/projectPhotos/learnup.png",
     link: "https://github.com/Leytox/E-learning-app",
   },

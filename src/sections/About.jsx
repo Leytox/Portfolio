@@ -22,11 +22,11 @@ export default function About() {
         scrollTrigger: {
           scrub: true,
           trigger: "#about",
-          start: "-=100 center", // Adjusted to delay the start of the animation
+          start: "-=100 center",
           end: "+=350",
           toggleActions: "restart reverse restart reverse",
         },
-      }
+      },
     );
   }, []);
   return (
@@ -61,7 +61,9 @@ export default function About() {
             <div className="flex gap-6">
               <Button
                 title={"Contact me 📞"}
-                handleClick={() => {}}
+                handleClick={() =>
+                  document.getElementById("contacts").scrollIntoView()
+                }
                 styles={
                   "bg-black text-white border-black border-[1px] hover:bg-white hover:text-black"
                 }

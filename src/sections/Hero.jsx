@@ -19,7 +19,7 @@ export default function Hero() {
         y: 0,
         text: "Fullstack Developer 👾",
         ease: "power2.out",
-      }
+      },
     );
     tl.fromTo(
       "#fadeIn-left",
@@ -29,12 +29,12 @@ export default function Hero() {
         ease: "power2.out",
       },
       {
-        duration: 1,
+        duration: 0.5,
         y: 0,
         stagger: 1,
         opacity: 1,
         ease: "power2.out",
-      }
+      },
     );
     tl.fromTo(
       "#photo",
@@ -48,7 +48,7 @@ export default function Hero() {
         scale: 1,
         opacity: 1,
         ease: "power4.inOut",
-      }
+      },
     );
     tl.fromTo(
       "#fadeIn-up",
@@ -62,7 +62,7 @@ export default function Hero() {
         y: 0,
         opacity: 1,
         ease: "power2.out",
-      }
+      },
     );
     tl.fromTo(
       "#name",
@@ -71,10 +71,10 @@ export default function Hero() {
         ease: "power2.out",
       },
       {
-        duration: 1,
+        duration: 0.5,
         opacity: 1,
         ease: "power2.out",
-      }
+      },
     );
     gsap.fromTo(
       "nav ul li",
@@ -90,7 +90,7 @@ export default function Hero() {
         opacity: 1,
         stagger: 0.2,
         ease: "power2.out",
-      }
+      },
     );
     gsap.fromTo(
       "#logo",
@@ -103,7 +103,7 @@ export default function Hero() {
         y: 0,
         duration: 1,
         ease: "bounce",
-      }
+      },
     );
     gsap.fromTo(
       "#home div",
@@ -124,13 +124,13 @@ export default function Hero() {
         opacity: 1,
         stagger: 0.2,
         ease: "power2.out",
-      }
+      },
     );
   }, []);
   return (
     <section id="home" className="h-screen w-full">
       <div
-        className="max-sm:mt-28 max-sm:gap-12 max-sm:pb-12 flex flex-1 justify-center items-center gap-24 
+        className="max-sm:mt-28 max-sm:gap-12 max-sm:pb-12 flex flex-1 justify-center items-center gap-24
        flex-row h-full max-sm:flex-col sm:flex-col md:flex-row lg:flex-row"
       >
         <div className="max-sm:items-center flex gap-8 flex-col">
@@ -153,10 +153,12 @@ export default function Hero() {
             className="font-border color-blue bg-white font-bold text-3xl secondary-text-color md:text-3xl lg:text-4xl w-fit"
             id="fadeIn-right"
           ></h3>
-          <div className="flex gap-6" id="fadeIn-up">
+          <span className="flex gap-6" id="fadeIn-up">
             <Button
               title={"Contact me 📞"}
-              handleClick={() => {}}
+              handleClick={() =>
+                document.getElementById("contacts").scrollIntoView()
+              }
               styles={
                 "bg-black text-white border-black border-[1px] hover:bg-white hover:text-black"
               }
@@ -172,7 +174,7 @@ export default function Hero() {
               }
               shadowColor={"#00c5ad"}
             />
-          </div>
+          </span>
         </div>
         <div className="flex justify-center flex-col items-center" id="photo">
           <div
