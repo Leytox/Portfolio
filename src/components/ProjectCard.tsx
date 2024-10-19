@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "./Button.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 export default function ProjectCard({ title, description, image, link }) {

@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import photo from "../assets/Photo.png";
-import Button from "../components/Button";
+import Button from "../components/Button.tsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -62,7 +62,7 @@ export default function About() {
               <Button
                 title={"Contact me 📞"}
                 handleClick={() =>
-                  document.getElementById("contacts").scrollIntoView()
+                  document.getElementById("contacts")?.scrollIntoView()
                 }
                 styles={
                   "bg-black text-white border-black border-[1px] hover:bg-white hover:text-black"

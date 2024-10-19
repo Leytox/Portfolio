@@ -1,10 +1,10 @@
-import Header from "./components/Header.jsx";
-import Hero from "./sections/Hero.jsx";
-import About from "./sections/About.jsx";
-import Projects from "./sections/Projects.jsx";
-import Services from "./sections/Services.jsx";
-import Contacts from "./sections/Contacts.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.tsx";
+import Hero from "./sections/Hero.tsx";
+import About from "./sections/About.tsx";
+import Projects from "./sections/Projects.tsx";
+import Services from "./sections/Services.tsx";
+import Contacts from "./sections/Contacts.tsx";
+import Footer from "./components/Footer.tsx";
 export default function App() {
   return (
     <main className="font-montserrat">
